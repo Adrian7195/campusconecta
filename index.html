@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusConecta · Universidad NovaTech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- PANTALLA DE INICIO DE SESIÓN -->
+  <section id="login">
+    <form id="lf" class="lc" novalidate>
+      <div class="logo">🎓 CampusConecta</div>
+      <p class="sub">Universidad NovaTech · Gestión de trámites universitarios</p>
+
+      <label>Correo institucional
+        <input id="em" type="email" placeholder="usuario@novatech.test">
+      </label>
+
+      <label>Contraseña
+        <input id="pw" type="password" placeholder="demo123">
+      </label>
+
+      <p id="le" class="err"></p>
+      <button class="btn">Iniciar sesión</button>
+
+      <div class="demo">
+        <button type="button" class="btn alt" data-d="student">Demo estudiante</button>
+        <button type="button" class="btn alt" data-d="admin">Demo administrador</button>
+      </div>
+
+      <p class="note">
+        Prototipo académico. Todos los datos son ficticios; no hay conexión con sistemas reales.
+      </p>
+    </form>
+  </section>
+
+  <!-- APLICACIÓN (se muestra después de iniciar sesión) -->
+  <div id="app" hidden>
+
+    <!-- Menú lateral -->
+    <aside id="sb">
+      <div class="logo">🎓 CampusConecta</div>
+      <nav id="nv"></nav>
+      <button class="btn alt" id="lo">Cerrar sesión</button>
+    </aside>
+
+    <!-- Contenido principal -->
+    <div class="mn">
+      <header>
+        <button id="mb" class="btn alt">☰</button>
+        <span id="wh"></span>
+        <span class="tag">Datos ficticios de demostración</span>
+      </header>
+
+      <main id="main"></main>
+    </div>
+
+  </div>
+
+  <!-- Mensaje emergente -->
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
